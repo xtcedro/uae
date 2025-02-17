@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Automation Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>🚀 AI Automation Dashboard</h1>
+
+    <label for="command">Choose a command:</label>
+    <select id="command">
+        <option value="clear-cache">Clear Cache</option>
+        <option value="update-system">Update System</option>
+        <option value="optimize-system">Optimize System</option>
+        <option value="deploy-app">Deploy Application</option>
+        <option value="restart-services">Restart Services</option>
+    </select>
+    <button id="sendCommand">Execute Command</button>
+
+    <h2>💡 Execution Log</h2>
+    <ul id="log"></ul>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
