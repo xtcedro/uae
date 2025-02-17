@@ -1,0 +1,85 @@
+/* ✅ Color Variables */
+:root {
+    --primary-color: #0d1117; /* Dark Background */
+    --secondary-color: #161b22; /* Slightly lighter background */
+    --accent-color: #58a6ff; /* Blue Highlight */
+    --success-color: #2ea043; /* Green for success messages */
+    --error-color: #ff4c4c; /* Red for errors */
+    --text-color: #e6edf3; /* Light Gray Text */
+    --border-color: #30363d; /* Subtle Border */
+}
+
+/* ✅ Global Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--primary-color);
+    color: var(--text-color);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* ✅ Header */
+h1 {
+    color: var(--accent-color);
+    margin-top: 20px;
+}
+
+/* ✅ Dropdown & Button */
+label {
+    font-size: 1.2rem;
+}
+
+select {
+    padding: 10px;
+    background: var(--secondary-color);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    font-size: 1rem;
+    margin: 10px;
+}
+
+button {
+    padding: 12px 18px;
+    background: var(--accent-color);
+    color: var(--primary-color);
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #79c0ff;
+}
+
+/* ✅ Execution Log */
+h2 {
+    margin-top: 20px;
+    color: var(--accent-color);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: var(--secondary-color);
+    padding: 10px;
+    margin: 5px auto;
+    border-radius: 5px;
+    width: 50%;
+    border-left: 5px solid var(--border-color);
+}
+
+li.success {
+    border-left-color: var(--success-color);
+}
+
+li.error {
+    border-left-color: var(--error-color);
+}
