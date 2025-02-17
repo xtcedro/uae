@@ -16,15 +16,15 @@ server.listen(port, () => {
     console.log(`🚀 AI Automation Dashboard running at http://localhost:${port}`);
 });
 
-// ✅ Start WebSocket Server for AI Automation
-const wss = new WebSocketServer({ server });
+// ✅ Start WebSocket Server (Must be on Port 8080)
+const wss = new WebSocketServer({ port: 8080 });
 
 wss.on("connection", (ws) => {
     console.log("📡 AI WebSocket Connected.");
 
     ws.on("message", (message) => {
         const command = message.toString();
-        console.log(`🔹 AI Triggered Command: ${command}`);
+        console.log(`🔹 Web Triggered Command: ${command}`);
 
         // Execute AI automation command
         const result = executeCommand(command);
